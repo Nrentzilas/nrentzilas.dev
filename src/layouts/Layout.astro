@@ -1,7 +1,7 @@
 ---
 import '@/styles/globals.css'
-import Header from '@/components/sections/header.astro';
 import Hero from '@/components/sections/hero.astro';
+import Themeicon from '@/components/astroComponents/themeicon.astro';
 ---
 
 <!doctype html>
@@ -14,7 +14,7 @@ import Hero from '@/components/sections/hero.astro';
 		<title>Nrentzilas.dev</title>
 	</head>
 	<body>
-		<Header client:load/>
+		<Themeicon />
 		<Hero />
 	</body>
 </html>
