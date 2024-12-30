@@ -1,0 +1,18 @@
+---
+import { BlurFadeTextName } from "@/components/blurFadeName";
+import { OrbitingCirclesDemo } from "@/components/orbitingSkills";
+---
+
+<section class="max-w-[1600px] mx-auto p-8 h-[500] ">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center justify-center">
+    <!-- Left Column -->
+    <div class="flex pl-20 justify-center md:justify-start">
+      <BlurFadeTextName client:load />
+    </div>
+    
+    <!-- Right Column -->
+    <div class="flex pr-20 justify-center md:justify-center p-6">
+      <OrbitingCirclesDemo client:load />
+    </div>
+  </div>
+</section>

@@ -22,7 +22,10 @@ export default {
     			},
     			primary: {
     				DEFAULT: 'hsl(var(--primary))',
-    				foreground: 'hsl(var(--primary-foreground))'
+    				foreground: 'hsl(var(--primary-foreground))',
+                    light: '#f8f9fa',
+                    dark: '#070e12',
+					darkish: '#0c1a20'
     			},
     			secondary: {
     				DEFAULT: 'hsl(var(--secondary))',
@@ -52,10 +55,17 @@ export default {
     			}
     		},
     		keyframes: {
-    			
+    			orbit: {
+    				'0%': {
+    					transform: 'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)'
+    				},
+    				'100%': {
+    					transform: 'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)'
+    				}
+    			}
     		},
     		animation: {
-    			
+    			orbit: 'orbit calc(var(--duration)*1s) linear infinite'
     		}
     	}
     },
