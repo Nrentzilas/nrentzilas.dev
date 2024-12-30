@@ -82,52 +82,52 @@ export function OrbitingCirclesDemo() {
 const Icons = {
   nextjs: () => (
     <img
-      src="/src/assets/svg/nextjs.svg"
+      src="/svg/nextjs.svg"
       alt="Next.js Icon"
       className="max-w-[50px] max-h-[50px] filter dark:invert dark:brightness-0 dark:contrast-100"
     />
   ),
   astrojs: () => (
     <img
-      src="/src/assets/svg/astro.svg"
+      src="/svg/astro.svg"
       alt="Astro Icon"
       className="max-w-[50px] max-h-[50px] filter contrast-200 brightness-0 dark:invert dark:brightness-0 dark:contrast-100"
     />
   ),
-  
   php: () => (
     <img
-      src="/src/assets/svg/php.svg"
+      src="/svg/php.svg"
       alt="PHP Icon"
       className="max-w-[50px] max-h-[50px] filter dark:invert dark:brightness-0 dark:contrast-100"
     />
   ),
   wordpress: () => (
     <img
-      src="/src/assets/svg/wordpress.svg"
+      src="/svg/wordpress.svg"
       alt="WordPress Icon"
       className="max-w-[50px] max-h-[50px] filter dark:invert dark:brightness-0 dark:contrast-100"
     />
   ),
   javascript: () => (
     <img
-      src="/src/assets/svg/js.svg"
+      src="/svg/js.svg"
       alt="JavaScript Icon"
-      className="max-w-[50px] max-h-[50px] filter dark:invert "
+      className="max-w-[50px] max-h-[50px] filter dark:invert"
     />
   ),
   python: () => (
     <img
-      src="/src/assets/svg/python.svg"
+      src="/svg/python.svg"
       alt="Python Icon"
-      className="max-w-[50px] max-h-[50px] filter dark:invert "
+      className="max-w-[50px] max-h-[50px] filter dark:invert"
     />
   ),
   selenium: () => (
     <img
-      src="/src/assets/svg/selenium.svg"
+      src="/svg/selenium.svg"
       alt="Selenium Icon"
-      className="max-w-[50px] max-h-[50px] filter dark:invert "
+      className="max-w-[50px] max-h-[50px] filter dark:invert"
     />
   ),
 };
+
