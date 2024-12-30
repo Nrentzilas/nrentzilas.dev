@@ -82,7 +82,7 @@ export function OrbitingCirclesDemo() {
 const Icons = {
   nextjs: () => (
     <img
-      src="/svg/nextjs.svg"
+      src="/svg/next.svg"
       alt="Next.js Icon"
       className="max-w-[50px] max-h-[50px] filter dark:invert "
     />
@@ -97,14 +97,14 @@ const Icons = {
   ),
   php: () => (
     <img
-      src="/svg/php.svg"
+      src="/svg/phpicon.svg"
       alt="PHP Icon"
       className="max-w-[50px] max-h-[50px] filter dark:invert "
     />
   ),
   wordpress: () => (
     <img
-      src="/svg/wordpress.svg"
+      src="/svg/wp.svg"
       alt="WordPress Icon"
       className="max-w-[50px] max-h-[50px] filter dark:invert "
     />
