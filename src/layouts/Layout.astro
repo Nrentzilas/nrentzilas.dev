@@ -1,7 +1,7 @@
 ---
 import '@/styles/globals.css'
 import Hero from '@/components/sections/hero.astro';
-import Themeicon from '@/components/astroComponents/themeicon.astro';
+import Themeicon from '@/components/small_components/themeicon';
 ---
 
 <!doctype html>
@@ -12,9 +12,28 @@ import Themeicon from '@/components/astroComponents/themeicon.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Nrentzilas.dev</title>
+
+		<!-- Preventing the fcking white flash when switching to the fkcing light/dark mode -->
+		<script>
+			(function () {
+				const theme = localStorage.getItem('theme');
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+				
+				const useDark = theme === 'dark' || (!theme && prefersDark);
+
+				if (useDark) {
+					document.documentElement.classList.add('dark');
+					document.body.style.backgroundColor = '#070e12'; 
+				} else {
+					document.documentElement.classList.remove('dark');
+					document.body.style.backgroundColor = '#f8f9fa';
+				}
+			})();
+		</script>
 	</head>
 	<body>
-		<Themeicon />
+		<Themeicon client:load />
 		<Hero />
 	</body>
 </html>
