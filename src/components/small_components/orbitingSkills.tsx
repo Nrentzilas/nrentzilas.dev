@@ -84,9 +84,10 @@ const Icons = {
     <img
       src="/svg/nextjs.svg"
       alt="Next.js Icon"
-      className="max-w-[50px] max-h-[50px] filter dark:invert dark:brightness-0 dark:contrast-100"
+      className="max-w-[50px] max-h-[50px] filter dark:invert "
     />
   ),
+
   astrojs: () => (
     <img
       src="/svg/astro.svg"
@@ -98,14 +99,14 @@ const Icons = {
     <img
       src="/svg/php.svg"
       alt="PHP Icon"
-      className="max-w-[50px] max-h-[50px] filter dark:invert dark:brightness-0 dark:contrast-100"
+      className="max-w-[50px] max-h-[50px] filter dark:invert "
     />
   ),
   wordpress: () => (
     <img
       src="/svg/wordpress.svg"
       alt="WordPress Icon"
-      className="max-w-[50px] max-h-[50px] filter dark:invert dark:brightness-0 dark:contrast-100"
+      className="max-w-[50px] max-h-[50px] filter dark:invert "
     />
   ),
   javascript: () => (
