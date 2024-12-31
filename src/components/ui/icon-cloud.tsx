@@ -11,7 +11,7 @@ import {
 } from "react-icon-cloud";
 
 export type DynamicCloudProps = {
-  iconSlugs?: string[]; // Made iconSlugs optional
+  iconSlugs?: string[]; 
   imageArray?: string[];
 };
 
@@ -69,7 +69,7 @@ export const renderCustomIcon = (
 type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
 
 export default function IconCloud({
-  iconSlugs = [], // Default to an empty array if not provided
+  iconSlugs = [], 
   imageArray,
 }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
@@ -77,7 +77,6 @@ export default function IconCloud({
 
   useEffect(() => {
     if (iconSlugs.length > 0) {
-      // Check if iconSlugs is not empty
       fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
     }
   }, [iconSlugs]);
@@ -91,7 +90,6 @@ export default function IconCloud({
   }, [data, theme]);
 
   return (
-    // @ts-ignore
     <Cloud {...cloudProps}>
       <>
         <>{renderedIcons}</>
