@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { TextRevealDemo } from '@/components/small_components/textReveal';
-
+import Hero from '@/components/sections/hero.astro';
+import { FloatingDockDemo } from '@/components/small_components/floatingDoc';
+import BentoGrid from '@/components/small_components/bentoGrid';
 
   
 ---
@@ -9,10 +11,11 @@ import { TextRevealDemo } from '@/components/small_components/textReveal';
 <Layout>
    
 </Layout>
-
+<FloatingDockDemo client:load/>
+<Hero />
  {/* @ts-ignore */}
+ <BentoGrid client:load/>
  <TextRevealDemo client:load />
- 
  
       
      
