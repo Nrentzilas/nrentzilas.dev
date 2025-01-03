@@ -15,7 +15,7 @@ export function FloatingDockDemo() {
     {
         title: "Theme",
         icon: <ThemeToggle />, 
-        href: "#", 
+        href: "javascript:void(0)", // Changed this shit to prevent the fkcing page from refreshing. Just realised it
       },
     {
       title: "Home",
@@ -51,7 +51,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/Nrentzilas_dev",
+      href: "https://x.com/Nrentzilas_dev", // New username baby
       target: "_blank", 
       rel: "noopener noreferrer", 
     },
