@@ -51,7 +51,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/SparkmateBizz",
+      href: "https://x.com/Nrentzilas_dev",
       target: "_blank", 
       rel: "noopener noreferrer", 
     },

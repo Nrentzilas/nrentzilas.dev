@@ -23,9 +23,9 @@ export default {
     			primary: {
     				DEFAULT: 'hsl(var(--primary))',
     				foreground: 'hsl(var(--primary-foreground))',
-                    light: '#f8f9fa',
-                    dark: '#070e12',
-					darkish: '#0c1a20'
+    				light: '#f8f9fa',
+    				dark: '#070e12',
+    				darkish: '#0c1a20'
     			},
     			secondary: {
     				DEFAULT: 'hsl(var(--secondary))',
@@ -63,23 +63,63 @@ export default {
     					transform: 'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)'
     				}
     			},
-				wave: {
-					'0%': { transform: 'rotate(0deg)' },
-					'10%': { transform: 'rotate(-10deg)' },
-					'20%': { transform: 'rotate(10deg)' },
-					'30%': { transform: 'rotate(-8deg)' },
-					'40%': { transform: 'rotate(8deg)' },
-					'50%': { transform: 'rotate(-5deg)' },
-					'60%': { transform: 'rotate(5deg)' },
-					'70%': { transform: 'rotate(-3deg)' },
-					'80%': { transform: 'rotate(3deg)' },
-					'90%': { transform: 'rotate(0deg)' },
-					'100%': { transform: 'rotate(0deg)' },
-				  },
+    			wave: {
+    				'0%': {
+    					transform: 'rotate(0deg)'
+    				},
+    				'10%': {
+    					transform: 'rotate(-10deg)'
+    				},
+    				'20%': {
+    					transform: 'rotate(10deg)'
+    				},
+    				'30%': {
+    					transform: 'rotate(-8deg)'
+    				},
+    				'40%': {
+    					transform: 'rotate(8deg)'
+    				},
+    				'50%': {
+    					transform: 'rotate(-5deg)'
+    				},
+    				'60%': {
+    					transform: 'rotate(5deg)'
+    				},
+    				'70%': {
+    					transform: 'rotate(-3deg)'
+    				},
+    				'80%': {
+    					transform: 'rotate(3deg)'
+    				},
+    				'90%': {
+    					transform: 'rotate(0deg)'
+    				},
+    				'100%': {
+    					transform: 'rotate(0deg)'
+    				}
+    			},
+    			marquee: {
+    				from: {
+    					transform: 'translateX(0)'
+    				},
+    				to: {
+    					transform: 'translateX(calc(-100% - var(--gap)))'
+    				}
+    			},
+    			'marquee-vertical': {
+    				from: {
+    					transform: 'translateY(0)'
+    				},
+    				to: {
+    					transform: 'translateY(calc(-100% - var(--gap)))'
+    				}
+    			}
     		},
     		animation: {
     			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
-				wave: 'wave 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+    			wave: 'wave 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+    			marquee: 'marquee var(--duration) infinite linear',
+    			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
     		}
     	}
     },
