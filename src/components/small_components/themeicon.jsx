@@ -49,7 +49,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button id="themeToggle" onClick={handleToggleClick}>
+    <button id="themeToggle" type="button" onClick={handleToggleClick}>
       {isDark ? (
         <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
