@@ -12,7 +12,6 @@ import { FloatingDockDemo } from '@/components/small_components/floatingDoc';
 		<meta name="generator" content={Astro.generator} />
 		<title>Nrentzilas.dev</title>
 
-		<!-- Preventing the fcking white flash when switching to the fkcing light/dark mode -->
 		<script>
 			(function () {
 				const theme = localStorage.getItem('theme');
@@ -32,7 +31,7 @@ import { FloatingDockDemo } from '@/components/small_components/floatingDoc';
 		</script>
 	</head>
 	<body>
-		<FloatingDockDemo client:load/>
+		
 	</body>
 </html>
 
@@ -43,4 +42,5 @@ import { FloatingDockDemo } from '@/components/small_components/floatingDoc';
 		width: 100%;
 		height: 100%;
 	}
+	
 </style>
