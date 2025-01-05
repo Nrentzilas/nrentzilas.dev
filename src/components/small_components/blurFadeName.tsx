@@ -2,7 +2,7 @@ import BlurFade from "@/components/ui/blur-fade";
 
 export function BlurFadeTextName() {
   return (
-    <section id="header" className="flex min-h-[50vh] flex-col items-center justify-center">
+    <section id="header" className="flex  flex-col items-center justify-center">
       <div className="flex flex-col items-start gap-4 text-left">
       <BlurFade delay={0.25} inView>
         <h2 className="text-3xl font-bold tracking-tighter dark:text-primary-light sm:text-5xl xl:text-6xl/none">
