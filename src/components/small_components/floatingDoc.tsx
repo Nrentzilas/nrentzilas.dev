@@ -1,6 +1,7 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import ThemeToggle from "@/components/small_components/themeicon";
+import BlurFade from "@/components/ui/blur-fade";
 import {
   IconBrandGithub,
   IconBrandX,
@@ -67,8 +68,10 @@ export function FloatingDockDemo() {
   ];
 
   return (
+    <BlurFade delay={0.25 * 3} inView >
     <div className="flex items-center justify-center fixed bottom-5 left-1/2 transform -translate-x-1/2 z-50">
       <FloatingDock items={links} />
     </div>
+    </BlurFade>
   );
 }
