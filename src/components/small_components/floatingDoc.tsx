@@ -13,16 +13,18 @@ import {
 export function FloatingDockDemo() {
   const links = [
     {
-        title: "Theme",
-        icon: <ThemeToggle />, 
-        href: "javascript:void(0)", // Changed this shit to prevent the fkcing page from refreshing. Just realised it
-      },
+      title: "Theme",
+      icon: <ThemeToggle />,
+      href: "javascript:void(0)",
+      ariaLabel: "Toggle Theme",
+    },
     {
       title: "Home",
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
+      ariaLabel: "Go to Home",
     },
     {
       title: "Projects",
@@ -30,6 +32,7 @@ export function FloatingDockDemo() {
         <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
+      ariaLabel: "View My Projects",
     },
     {
       title: "Free Components",
@@ -37,23 +40,25 @@ export function FloatingDockDemo() {
         <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
+      ariaLabel: "Browse Components Used",
     },
-
     {
       title: "Changelog",
       icon: (
         <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
+      ariaLabel: "View Changelog",
     },
     {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/Nrentzilas_dev", 
-      target: "_blank", 
-      rel: "noopener noreferrer", 
+      href: "https://x.com/Nrentzilas_dev",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      ariaLabel: "Visit My Twitter Profile",
     },
     {
       title: "GitHub",
@@ -63,11 +68,12 @@ export function FloatingDockDemo() {
       href: "https://github.com/Nrentzilas/",
       target: "_blank",
       rel: "noopener noreferrer",
+      ariaLabel: "Visit My GitHub Profile",
     },
   ];
 
   return (
-    <div className="flex items-center justify-center fixed bottom-5 left-1/2 transform -translate-x-1/2 z-50">
+    <div className="hidden md:flex items-center justify-center fixed bottom-5 left-1/2 transform -translate-x-1/2 z-50">
       <FloatingDock items={links} />
     </div>
   );

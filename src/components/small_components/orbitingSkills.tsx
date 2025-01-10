@@ -4,7 +4,7 @@ import BlurFade from "@/components/ui/blur-fade";
 
 export function OrbitingCirclesDemo() {
   return (
-    <BlurFade delay={0.75} inView direction="left" offset={100}>
+    <BlurFade delay={0.25 * 3} inView direction="left" offset={100}>
     <div className="relative flex h-[500px] min-w-[500px] mx-auto  flex-col w-full items-center justify-center overflow-hidden rounded-lg bg-primary-light dark:bg-primary-dark transform scale-[0.65]">
       <span className="pointer-events-none whitespace-pre-wrap text-center text-3xl font-semibold leading-none text-black dark:text-white">
         Skills

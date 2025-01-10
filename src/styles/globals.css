@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  
+  html, body {
+    @apply overflow-x-hidden; 
+  }
 
-  /* Apply the background and text colors */
+  @media (min-width: 768px) {
+    html, body {
+      overflow-x: visible; 
+    }
+  }
+
   html {
     background-color: #070e12;
     color: hsl(var(--foreground));
@@ -15,12 +22,10 @@
     @apply bg-background text-foreground;
   }
 
-  /* Additional card styling */
   .card {
-    background-color: --primary-dark;
+    background-color: var(--primary-dark);
     border-radius: var(--radius);
     @apply shadow-md p-4;
   }
 }
-
 
